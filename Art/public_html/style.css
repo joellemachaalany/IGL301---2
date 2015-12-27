@@ -1,5 +1,5 @@
 *{
-        font-family: comic sans ms,sand-serif;
+    font-family: comic sans ms,sand-serif;
 }
 
 #background{
@@ -14,14 +14,23 @@
 
 a{
     text-decoration: none;
-    color: blue;
+    color: darkblue;
     font-size: 20px;
     font-variant: small-caps;
+    font-weight: bold;
+    text-transform: capitalize;
 }
 
 a:hover{
     font-weight: bolder;
     color:red;
+}
+
+a:active{
+    color:black;
+}
+
+a:visited{
 }
 
 #contact{
@@ -32,4 +41,69 @@ a:hover{
     border-bottom-left-radius: 20px;
     padding-left: 10px;
     margin-top: 10px;
+}
+
+#header{
+    text-align: center;
+    margin-left: 150px;
+}
+
+#menu{
+    background-color: lightgrey;
+    text-align: center;
+    height:35px;
+}
+
+#menu>a{
+    margin: 25px;
+}
+
+#photos{
+    width: 1100px;
+    height: 550px;
+    position: relative;
+    left: 10%; 
+}
+
+#photos>#label{
+    margin-left: 450px;
+}
+
+.labels{
+    position: relative;
+    top: -15px; 
+}
+
+#artdef{
+    font-size: 20px;
+    color:red;
+}
+
+#type{
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+ul>li{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+ul>li>p{
+    font-size: 15px;
+    color:blue;
+}
+
+#other{
+    font-size: 20px;
+    color:red;
+}
+
+#footer{
+    background-color: lightgrey;
+}
+
+#footer>p{
+    text-align: center;
 }
