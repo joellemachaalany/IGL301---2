@@ -1,15 +1,13 @@
 *{
-    font-family: comic sans ms,sand-serif;
+    font-family: bariol,sand-serif;
 }
 
 #background{
     background-image: url("images/background.jpg");
     background-attachment: fixed;
-    width: 100%;
-    height: 100%;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0%;
+    left: 0%;
 }
 
 a{
@@ -74,6 +72,17 @@ a:visited{
     top: -15px; 
 }
 
+#content{
+    width: 100%;
+    height: 600px;
+    visibility: hidden;
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+
 #artdef{
     font-size: 20px;
     color:red;
@@ -106,4 +115,34 @@ ul>li>p{
 
 #footer>p{
     text-align: center;
+}
+
+#background2{
+    background-image: url("images/background2.jpg");
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+}
+
+#up{
+    float: right;
+    position: relative;
+    top: -25px;
+}
+
+table{
+    position: relative;
+    top: 150px;
+    left: 50px;
+    background-color: #ffffff;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    color: #000000;
+}
+
+#content2{
+    height: 615px;
 }

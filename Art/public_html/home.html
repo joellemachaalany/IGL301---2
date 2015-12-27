@@ -6,12 +6,19 @@
         <script src="jquery-2.1.3.js"></script>
         <link href="style.css" rel="stylesheet"/>
         <script>
+            window.onload = function() {
+                var theDelay = 2;
+                var timer = setTimeout("showText()", theDelay * 1000);
+            };
+            function showText() {
+                document.getElementById("content").style.visibility = "visible";
+            }
 
         </script>
     </head>
     <body>
         <div id="background">
-            <a href="" id="contact">contact us</a>
+            <a href="contact_us.html" id="contact">contact us</a>
             <h1 id="header">Discover the art inside you!</h1>
             <nav id="menu">
                 <a href="">home</a>
@@ -34,33 +41,36 @@
                            onchange="document.images[0].src = 'images/music.jpg'"/>Music
                 </label>
             </div>
-            <p id="artdef">Art is a diverse range of human activities where you express your imagination.
-                The expression or application of human creative skill and imagination, typically in a visual form such 
-                as painting or sculpture, producing works to be appreciated primarily for their beauty or emotional power.</p>
-            <p id="type">Types of art:</p>
-            <ul>
-                <li>Paintings:
-                    <p>The first paintings were discovered in South West France in the Lascaux caves from the Upper 
-                        Paleolithic Age, around 40,000 to 10,000 years ago.</p>
-                </li>
-                <li>Photography:
-                    <p>A photograph is an image created by the exposure of light on a light-sensitive material 
-                        at some stage during its making.</p>
-                </li>
-                <li>Drawings:
-                    <p>As with paintings, drawings are one of the oldest art forms around and can be traced back 
-                        to prehistoric times.</p>
-                </li>
-                <li>Design:
-                    <p>Part of applied arts, design comes in many forms, from graphic, fashion, interior, 
-                        functional to the industrial.</p>
-                </li>
-                <li>New Media:
-                    <p>New Media is an art form which came about in the 1960s, as artists started to 
-                        experiment with developing technology in their art-making.</p>
-                </li>
-            </ul>
-            <p id="other">And many other types like prints, crafts, performance art, sculpture and installation.</p>
+            <div id="content">
+                <p id="artdef" delay="">Art is a diverse range of human activities where you express your imagination.
+                    The expression or application of human creative skill and imagination, typically in a visual form such 
+                    as painting or sculpture, producing works to be appreciated primarily for their beauty or emotional power.</p>
+                <p id="type">Types of art:</p>
+                <ul>
+                    <li>Paintings:
+                        <p>The first paintings were discovered in South West France in the Lascaux caves from the Upper 
+                            Paleolithic Age, around 40,000 to 10,000 years ago.</p>
+                    </li>
+                    <li>Photography:
+                        <p>A photograph is an image created by the exposure of light on a light-sensitive material 
+                            at some stage during its making.</p>
+                    </li>
+                    <li>Drawings:
+                        <p>As with paintings, drawings are one of the oldest art forms around and can be traced back 
+                            to prehistoric times.</p>
+                    </li>
+                    <li>Design:
+                        <p>Part of applied arts, design comes in many forms, from graphic, fashion, interior, 
+                            functional to the industrial.</p>
+                    </li>
+                    <li>New Media:
+                        <p>New Media is an art form which came about in the 1960s, as artists started to 
+                            experiment with developing technology in their art-making.</p>
+                    </li>
+                </ul>
+                <p id="other">And many other types like prints, crafts, performance art, sculpture and installation.</p>
+            </div>
+            <a href="#"><img src="images/arrow.png" alt="arrow" id="up"/></a>
             <div id="footer">
                 <p>&copy; right reserved. By Joelle Machaalany</p>
             </div>
