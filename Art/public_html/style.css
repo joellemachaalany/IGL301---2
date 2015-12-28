@@ -64,7 +64,7 @@ a:visited{
 }
 
 #photos>#label{
-    margin-left: 450px;
+    margin-left: 420px;
 }
 
 .labels{
@@ -175,4 +175,19 @@ td{
 
 #content2{
     height: 615px;
+}
+
+#background3{
+    background-image: url("images/photograph.jpg");
+    background-attachment: fixed;
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+#header1{
+    text-align: center;
+    font-size: 50px;
 }
