@@ -2,12 +2,14 @@
     font-family: comic sans ms,sand-serif;
 }
 
-#background{
-    background-image: url("images/background.jpg");
+#background,#background2,#background3,#background4{
     background-attachment: fixed;
     position: absolute;
     top: 0%;
     left: 0%;
+}
+#background{
+    background-image: url("images/background.jpg");
 }
 
 a{
@@ -124,12 +126,9 @@ ul>li>p{
 
 #background2{
     background-image: url("images/background2.jpg");
-    background-attachment: fixed;
     width: 100%;
     height: 100%;
-    position: absolute;
-    left: 0%;
-    top: 0%;
+   
 }
 
 #up{
@@ -179,11 +178,7 @@ td{
 
 #background3{
     background-image: url("images/photograph.jpg");
-    background-attachment: fixed;
     width: 100%;
-    position: absolute;
-    top: 0%;
-    left: 0%;
 }
 
 #header1{
@@ -223,7 +218,7 @@ td{
 
 }
 
-#influential{
+#influential,#types{
     font-size: 25px;
     color:lightgrey;
     background-color: blue;
@@ -261,12 +256,12 @@ td{
     margin-top: 15px;
 }
 
-.painting{
+.painting, .music{
     width: 75%;
     margin: 0px auto;
 }
 
-.painting>a>img{
+.painting>a>img, .music>a>img{
     width: 200px;
     height: 150px;
     border: black solid 1px;
@@ -274,7 +269,7 @@ td{
     margin-bottom: 15px;
 }
 
-.painting>pre{
+.painting>pre, .music>pre{
     display: inline-block;
     position: relative;
     background-color: lightblue;
@@ -282,11 +277,23 @@ td{
     top: 25px;
 }
 
-#painting1,#painting2{
+#painting1,#painting2, #music1, #music2, #music3{
     text-align: right;
     border-top: black solid 5px;
 }
 
-#painting1{
+#painting1, #music1, #music2{
     border-bottom: black solid 5px;
+}
+
+#background4{
+    background-image: url("images/musicbackground.jpg");
+    width:100%;
+}
+
+#moretypes{
+    font-size: 20px;
+    background-color: lightblue;
+    width: 750px;
+    margin: 0px auto;
 }
