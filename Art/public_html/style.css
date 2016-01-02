@@ -256,12 +256,12 @@ td{
     margin-top: 15px;
 }
 
-.painting, .music{
+.painting, .music, .fashion{
     width: 75%;
     margin: 0px auto;
 }
 
-.painting>a>img, .music>a>img{
+.painting>a>img, .music>a>img, .fashion>a>img{
     width: 200px;
     height: 150px;
     border: black solid 1px;
@@ -269,7 +269,7 @@ td{
     margin-bottom: 15px;
 }
 
-.painting>pre, .music>pre{
+.painting>pre, .music>pre, .fashion>pre{
     display: inline-block;
     position: relative;
     background-color: lightblue;
