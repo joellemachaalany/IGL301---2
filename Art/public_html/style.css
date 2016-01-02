@@ -2,7 +2,7 @@
     font-family: comic sans ms,sand-serif;
 }
 
-#background,#background2,#background3,#background4{
+#background,#background2,#background3,#background4, #background5{
     background-attachment: fixed;
     position: absolute;
     top: 0%;
@@ -218,7 +218,7 @@ td{
 
 }
 
-#influential,#types{
+#influential,#types,#fashionstyle{
     font-size: 25px;
     color:lightgrey;
     background-color: blue;
@@ -296,4 +296,13 @@ td{
     background-color: lightblue;
     width: 750px;
     margin: 0px auto;
+}
+
+#musiccontent{
+    height: 1420px;
+}
+
+#background5{
+    background-image: url("images/fashion background.jpg");
+    width: 100%;
 }
