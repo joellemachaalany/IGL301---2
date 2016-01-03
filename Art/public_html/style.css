@@ -234,10 +234,6 @@ td{
     display: inline;
     margin: 35px;
 }
-#photo1,#photo2{
-    text-align: right;
-    border-top: black solid 5px;
-}
 
 #photo1{
     border-bottom: black solid 5px;
@@ -277,12 +273,12 @@ td{
     top: 25px;
 }
 
-#painting1,#painting2, #music1, #music2, #music3{
+#photo1,#photo2, #painting1,#painting2, #music1, #music2, #music3, #fashion1, #fashion2, #fashion3, #fashion4, #fashion5{
     text-align: right;
     border-top: black solid 5px;
 }
 
-#painting1, #music1, #music2{
+#painting1, #music1, #music2, #fashion1, #fashion2, #fashion3, #fashion4{
     border-bottom: black solid 5px;
 }
 
@@ -291,11 +287,13 @@ td{
     width:100%;
 }
 
-#moretypes{
+#moretypes, #morefashion{
     font-size: 20px;
-    background-color: lightblue;
-    width: 750px;
+    background-color: blue;
+    width: 790px;
     margin: 0px auto;
+    text-align: justify;
+    color: lightgrey;
 }
 
 #musiccontent{
