@@ -4,20 +4,24 @@
         <title>Contact Us</title>
         <meta charset="UTF-8">
         <script src="jquery-2.1.3.js"></script>
+        <script src="script.js"></script>
         <link href="style.css" rel="stylesheet"/>
         <link href="images/contacticon.jpg" rel="icon" type="image/x-icon"/>
+        <script>
+            
+        </script>
     </head>
-    <body>
+    <body onload="changeColor()">
         <div id="background2">
             <div id="content2">
-                <nav class="menu">
+                <nav class="menu" onload="autoHide()">
                     <a href="home.html">home</a>
                     <a href="photography.html">pictures</a>
                     <a href="music.html">music</a>
                     <a href="fashion.html">fashion</a>
                 </nav>
                 <table border="1">
-                    <caption>You can find us anywhere at anytime </caption>
+                    <caption id="header">You can find us anywhere at anytime </caption>
                     <thead>
                         <tr>
                             <th colspan="3">Contact Us</th>
@@ -47,7 +51,7 @@
                             <td>xxxxxxxxxxx</td>
                         </tr>
                         <tr>
-                            <td><a href="">YouTube<a/></td>
+                            <td><a href="">YouTube</a></td>
                             <td>xxxxxxxxxxx</td>
                         </tr>
                         <tr>
