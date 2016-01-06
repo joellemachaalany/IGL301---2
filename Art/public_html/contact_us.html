@@ -8,7 +8,13 @@
         <link href="style.css" rel="stylesheet"/>
         <link href="images/contacticon.jpg" rel="icon" type="image/x-icon"/>
         <script>
-            
+            $(document).ready(function() {
+                $("tr:odd()").css("background-color", "silver");
+                $("tr:even()").css("background-color", "lightblue");
+                $("tr:first").css("background-color", "grey");
+                $("tr:last").css("background-color", "grey");
+                $("#empty2").css("background-color", "lightblue")
+            });
         </script>
     </head>
     <body onload="changeColor()">
@@ -21,17 +27,12 @@
                     <a href="fashion.html">fashion</a>
                 </nav>
                 <table border="1">
-                    <caption id="header">You can find us anywhere at anytime </caption>
+                    <caption>You can find us anywhere at anytime </caption>
                     <thead>
                         <tr>
                             <th colspan="3">Contact Us</th>
                         </tr>
-                    </thead>
-                    <tfoot>
-                        <tr>
-                            <th colspan="3">Stay Connected</th>
-                        </tr>
-                    </tfoot>
+                    </thead>                  
                     <tbody>
                         <tr>
                             <td rowspan="5" class="titles">Social Media</td>
@@ -65,7 +66,19 @@
                             <td id="empty2"> </td>
                         </tr>
                     </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="3">Stay Connected</th>
+                        </tr>
+                    </tfoot>
                 </table>
+            </div>
+            <div>
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+                <p><input type="text" placeholder="Subject"></p>
+                <p><input type="email" placeholder="E-mail"></p>
+                <p><textarea></textarea></p>
             </div>
             <div id="footer">
                 <p>&copy; right reserved. By Joelle Machaalany</p>

@@ -53,5 +53,5 @@ function getName(){
     var name =
             window.prompt("Enter your name");
     document.getElementById("header").innerHTML =
-            "Welcome " + name + " discover the art around you!";
+            "Welcome " + name + ", discover the art around you!";
 }
