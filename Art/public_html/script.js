@@ -49,9 +49,41 @@ $(function() {
     });
 });
 
-function getName(){
+function getName() {
     var name =
             window.prompt("Enter your name");
     document.getElementById("header").innerHTML =
             "Welcome " + name + ", discover the art around you!";
 }
+
+
+$(function() {
+    $(":submit").css("background-color", "lightblue");
+});
+
+function onFocus(x) {
+    x.style.borderColor = 'grey';
+}
+
+function onBlur(y) {
+    y.style.borderColor = '';
+}
+
+function changeBGcolor(me) {
+    if (me.value === "") {
+        me.style.backgroundColor = "";
+    } else {
+        me.style.backgroundColor = "lightblue";
+    }
+}
+
+function alertName() {
+    var frm =
+            document.getElementById("message");
+    alert("Thank you " + frm.elements[0].value + " " + frm.elements[1].value + " for sending us your feedback");
+}
+
+function reset() {
+    document.getElementById("message").reset();
+}
+

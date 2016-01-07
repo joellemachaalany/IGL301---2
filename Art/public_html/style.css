@@ -170,10 +170,6 @@ td{
     border-top: none;
 }
 
-#content2{
-    height: 615px;
-}
-
 #background3{
     background-image: url("images/photograph.jpg");
     width: 100%;
@@ -304,7 +300,44 @@ td{
 }
 
 textarea{
-    width: 350px;
+    width: 346px;
     height: 200px;
     resize: none;
+}
+
+.width{
+    width: 347px;
+}
+
+#message{
+    height: 400px;
+    width:380px;
+    border: grey solid 5px;
+    position: absolute;
+    top: 200px;
+    left:850px;
+    background: linear-gradient(lightgrey,transparent 150%);
+}
+
+#backgroundcontent{
+    height: 577px;
+}
+
+#email{
+    cursor: pointer;
+}
+
+.txtfields, .width{
+    margin-left: 15px;
+}
+
+#text1, #text2{
+    margin-top: 15px;
+}
+
+#send{
+    float: right;
+    margin-right: 15px;
+    position: relative;
+    top: -40px;
 }

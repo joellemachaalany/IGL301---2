@@ -13,19 +13,26 @@
                 $("tr:even()").css("background-color", "lightblue");
                 $("tr:first").css("background-color", "grey");
                 $("tr:last").css("background-color", "grey");
-                $("#empty2").css("background-color", "lightblue")
+                $("#empty2").css("background-color", "lightblue");
             });
+
+            $(document).ready(function() {
+                $("#email").click(function() {
+                    $("#message").toggle(1000);
+                });
+            });
+
         </script>
     </head>
-    <body onload="changeColor()">
+    <body>
         <div id="background2">
-            <div id="content2">
-                <nav class="menu" onload="autoHide()">
-                    <a href="home.html">home</a>
-                    <a href="photography.html">pictures</a>
-                    <a href="music.html">music</a>
-                    <a href="fashion.html">fashion</a>
-                </nav>
+            <nav class="menu">
+                <a href="home.html">home</a>
+                <a href="photography.html">pictures</a>
+                <a href="music.html">music</a>
+                <a href="fashion.html">fashion</a>
+            </nav>
+            <div id="backgroundcontent">
                 <table border="1">
                     <caption>You can find us anywhere at anytime </caption>
                     <thead>
@@ -35,7 +42,7 @@
                     </thead>                  
                     <tbody>
                         <tr>
-                            <td rowspan="5" class="titles">Social Media</td>
+                            <td rowspan="5">Social Media</td>
                             <td><a href="">Facebook</a></td>
                             <td> xxxxxxxxxxx </td>
                         </tr>
@@ -56,8 +63,8 @@
                             <td>xxxxxxxxxxx</td>
                         </tr>
                         <tr>
-                            <td class="titles">E-mail</td>
-                            <td><a href="mailto:joellemachaalany@gmail.com">xxxxxxxxxxx@gmail.com</a></td>
+                            <td>E-mail</td>
+                            <td id="email"><a>xxxxxxxxxxx@gmail.com</a></td>
                             <td id="empty"> </td>
                         </tr>
                         <tr>
@@ -72,17 +79,24 @@
                         </tr>
                     </tfoot>
                 </table>
-            </div>
-            <div>
-                <input type="text" placeholder="First Name" required>
-                <input type="text" placeholder="Last Name" required>
-                <p><input type="text" placeholder="Subject"></p>
-                <p><input type="email" placeholder="E-mail"></p>
-                <p><textarea></textarea></p>
+                <form id="message" onsubmit="alertName() , reset()" action="mailto:joellemachaalany@gmail.com">
+                    <input type="text" placeholder="First Name" required class="txtfields" id="text1" onfocus="onFocus(this)"
+                           onblur="onBlur(this)" onkeyup="changeBGcolor(this)">
+                    <input type="text" placeholder="Last Name" required id="text2" onfocus="onFocus(this)"
+                           onblur="onBlur(this)" onkeyup="changeBGcolor(this)">
+                    <p><input type="text" placeholder="Subject" required class="width" onfocus="onFocus(this)"
+                              onblur="onBlur(this)" onkeyup="changeBGcolor(this)"></p>
+                    <p><input type="email" placeholder="E-mail" required class="width" onfocus="onFocus(this)"
+                              onblur="onBlur(this)" onkeyup="changeBGcolor(this)"></p>
+                    <p><textarea placeholder="Type your messsage here" class="txtfields" onkeyup="changeBGcolor(this)">
+                        </textarea></p>
+                    <p class="txtfields">All fields are required!</p>
+                    <input type="submit" value="Send" id="send" />
+                </form>
             </div>
             <div id="footer">
                 <p>&copy; right reserved. By Joelle Machaalany</p>
-            </div>
+            </div>          
         </div>
     </body>
 </html>
