@@ -7,8 +7,15 @@
         <script src="jquery-2.1.3.js"></script>
         <link href="style.css" rel="stylesheet"/>
         <link href="images/photoicon.png" rel="icon" type="image/x-icon"/>
+        <script>
+            $(document).ready(function() {
+                $("img:src").change(function() {
+                    $(":href").val($("img").attr('src'));
+                });
+            });
+        </script>   
     </head>
-    <body>
+    <body onload="changePicture() ,changePicture2(), changePicture3(), changePicture4(), changePicture5()">
         <div id="background3">
             <h1 id="header1">Pictures</h1>
             <nav class="menu">
@@ -46,11 +53,11 @@
                     <a href="images/weather.jpg" target="_blank"><img src="images/weather.jpg" alt="weather"></a></p>
             </div>
             <div class="pictures">
-                <a href="images/car.jpg" target="_blank"><img src="images/car.jpg" alt="car"></a>
-                <a href="images/eiffel tower.jpg" target="_blank"><img src="images/eiffel tower.jpg" alt="eiffel"></a>
-                <a href="images/lastdrop.jpg" target="_blank"><img src="images/lastdrop.jpg" alt="lastdrop"></a>
-                <a href="images/upsidedown.jpg" target="_blank"><img src="images/upsidedown.jpg" alt="upsidedown"></a>
-                <a href="images/wave.jpg" target="_blank"><img src="images/wave.jpg" alt="wave"></a>
+                <a href="images/car.jpg" target="_blank" onchange="onChange()"><img src="images/car.jpg" alt="car" id="pictures1"></a>
+                <a href="images/eiffel tower.jpg" target="_blank"><img src="images/eiffel tower.jpg" alt="eiffel" id="pictures2"></a>
+                <a href="images/lastdrop.jpg" target="_blank"><img src="images/lastdrop.jpg" alt="lastdrop" id="pictures3"></a>
+                <a href="images/upsidedown.jpg" target="_blank"><img src="images/upsidedown.jpg" alt="upsidedown" id="pictures4"></a>
+                <a href="images/wave.jpg" target="_blank"><img src="images/wave.jpg" alt="wave" id="pictures5"></a>
             </div>
             <div id="drawing" class="top">
                 <h2>Drawing</h2>
