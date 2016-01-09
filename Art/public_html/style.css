@@ -76,10 +76,15 @@ a:visited{
 
 #content{
     width: 70%;
-    height: 650px;
+    height: 695px;
     border: grey solid 5px;
     margin: 0px auto;
     background: linear-gradient(lightgrey, transparent 100%);
+}
+
+input{
+    float: right;
+    margin-right: 10px;
 }
 
 /*@keyframes mymove {

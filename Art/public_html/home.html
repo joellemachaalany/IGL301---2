@@ -6,18 +6,10 @@
         <script src="jquery-2.1.3.js"></script>
         <script src="script.js"></script>
         <link href="style.css" rel="stylesheet"/>
-        <link href="images/articon.jpg" rel="icon" type="image/x-icon"/>
-        <script>
-            /*window.onload = function() {
-             var theDelay = 2;
-             var timer = setTimeout("showText()", theDelay * 1000);
-             };
-             function showText() {
-             document.getElementById("content").style.visibility = "visible";
-             }*/
-        </script>
+        <link href="images/articon.jpg" rel="icon" type="image/x-icon"/>   
     </head>
-    <body onload="changeColor(); getName()">
+    <body onload="changeColor();
+            getName()">
         <div id="background">
             <a href="contact_us.html" id="contact">contact us</a>
             <!--<button>Change Style</button>-->
@@ -72,6 +64,7 @@
                         </li>
                     </ul>
                     <p id="other">And many other types like prints, crafts, performance art, sculpture and installation.</p>
+                    <input type="button" value="Change Style">
                 </div>
                 <a href="#"><img src="images/arrow.png" alt="arrow" id="up"/></a>
                 <div id="footer">
