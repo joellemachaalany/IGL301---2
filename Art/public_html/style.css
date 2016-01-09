@@ -358,3 +358,11 @@ textarea{
     font-size: 15px;
     text-decoration: underline;
 }
+
+#emailaccount{
+    position: absolute;
+    top: 550px;
+    left: 120px;
+    background-color: lightblue;
+    font-size: 15px;
+}
