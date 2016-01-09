@@ -10,8 +10,8 @@
         <script>
         </script>   
     </head>
-    <body onload="changePicture() ,changePicture2(), changePicture3(), changePicture4(), changePicture5(), 
-                changePicture6() ,changePicture7(), changePicture8(), changePicture9(), changePicture10()">
+    <body onload="changePicture(), changePicture2(), changePicture3(), changePicture4(), changePicture5(),
+                    changePicture6(), changePicture7(), changePicture8(), changePicture9(), changePicture10()">
         <div id="background3">
             <h1 id="header1">Pictures</h1>
             <nav class="menu">
@@ -26,8 +26,9 @@
                 <li><a href="#drawing">Drawing</a></li>
             </ul>
             <div id="photography" class="top">
-                <h2>Photography</h2>
-                <p>Photography is the science, art and practice of creating durable images by 
+                <h2 id="photographyheader">Photography</h2>
+                <input type="button" value="Double Click me" id="definition" ondblclick="changeDiv()">
+                <p id="photographydef">Photography is the science, art and practice of creating durable images by 
                     recording light or other electromagnetic radiation, either electronically by 
                     means of an image sensor, or chemically by means of a light-sensitive material such as photographic film.</p>
             </div>

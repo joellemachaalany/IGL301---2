@@ -44,7 +44,6 @@ function getName() {
 $(function() {
     $(":submit").css("background-color", "lightblue");
 });
-
 function onFocus(x) {
     x.style.borderColor = 'grey';
 }
@@ -248,7 +247,7 @@ function getPicture9() {
         pic9 = "images/realistic3d.jpg";
         document.getElementById("pic9").href = pic9;
     }
-    document.getElementById("pictures9").src = pic4;
+    document.getElementById("pictures9").src = pic9;
 }
 
 var picture10;
@@ -383,3 +382,15 @@ $(function() {
         $("li:nth-child(3)").css({"list-style-type": "circle"});
     });
 });
+
+function changeDiv() {
+    var p = document.getElementById("photographydef");
+    var h = document.getElementById("photographyheader");
+    if ((p.style.color === "black") && (h.style.color === "black")) {
+        p.style.color = "blue";
+        h.style.color = "blue";
+    } else {
+        p.style.color = "black";
+        h.style.color = "black";
+    }
+}
